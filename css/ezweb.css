@@ -1,0 +1,94 @@
+:root {
+    --pageWidth: 80%;
+    --navHeight: 50px;
+}
+
+body {
+    margin: 0;
+}
+
+/* ------------------------------------------------------ Eriks lekkere fonts ------------------------------------------------------ */
+
+@font-face {
+    font-family: proximanovalight;
+    src: url("fonts/Proxima Nova Alt Light.otf");
+}
+
+@font-face {
+    font-family: proximanovaregular;
+    src: url("fonts/ProximaNova-Regular.otf");
+}
+
+@font-face {
+    font-family: proximanovabold;
+    src: url("fonts/Proxima Nova Bold.otf");
+}
+
+@font-face {
+    font-family: proximanovaextrabold;
+    src: url("fonts/Proxima Nova Extrabold.otf")
+}
+
+@font-face {
+    font-family: SailecBlack;
+    src: url("fonts/SailecBlack.ttf")
+}
+
+@font-face {
+    font-family: SailecBold;
+    src: url("fonts/SailecBold.ttf")
+}
+
+@font-face {
+    font-family: SailecMedium;
+    src: url("fonts/SailecMedium.ttf")
+}
+
+@font-face {
+    font-family: SailecRegular;
+    src: url("fonts/SailecRegular.ttf")
+}
+
+/* Navigation CSS. */
+
+nav {
+    position: fixed;
+    background-color: #005a87;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: var(--navHeight);
+    top: 0;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    width: var(--pageWidth);
+}
+
+#navBar * {
+    font-family: proximanovalight;
+    color: white;
+}
+
+#navSpace {
+    height: var(--navHeight);
+}
+
+/* Page sections. */
+.pageSection {
+    width: var(--pageWidth);
+    margin: auto;
+}
+
+
+/* Statement. */
+h2 {
+    font-family: SailecRegular;
+}
+
+#statementText {
+    text-align: center;
+}
