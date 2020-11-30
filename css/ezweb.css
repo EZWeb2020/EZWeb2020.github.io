@@ -1,10 +1,22 @@
 :root {
     --pageWidth: 80%;
     --navHeight: 50px;
+    --pageDividerColour: #561421;
+
+    --backgroundColour: #CE2128;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
+    background-color: var(--backgroundColour);
+}
+
+* {
+    font-family: proximanovaregular;
 }
 
 /* ------------------------------------------------------ Eriks lekkere fonts ------------------------------------------------------ */
@@ -49,7 +61,15 @@ body {
     src: url("fonts/SailecRegular.ttf")
 }
 
-/* Navigation CSS. */
+/* ------------------------------------------------------ Page dividers. ------------------------------------------------------ */
+.pageDivider {
+    background-color: var(--pageDividerColour);
+    height: 2vh;
+    margin: 0;
+}
+
+
+/* ------------------------------------------------------ Navigation CSS. ------------------------------------------------------ */
 
 nav {
     position: fixed;
@@ -64,11 +84,13 @@ nav {
 
 #navBar {
     display: flex;
+    position: relative;
     justify-content: space-between;
+    align-items: center;
     width: var(--pageWidth);
 }
 
-#navBar * {
+#navBar a {
     font-family: proximanovalight;
     color: white;
 }
@@ -77,18 +99,64 @@ nav {
     height: var(--navHeight);
 }
 
-/* Page sections. */
+#logoInNav {
+    position: relative;
+    width: 10%;
+    height: var(--navHeight);
+}
+
+/* ------------------------------------------------------ Page sections. ------------------------------------------------------ */
+
 .pageSection {
     width: var(--pageWidth);
     margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+/* ------------------------------------------------------ Statement. ------------------------------------------------------ */
 
-/* Statement. */
 h2 {
     font-family: SailecRegular;
+    color: white;
 }
 
 #statementText {
     text-align: center;
 }
+
+/* ------------------------------------------------------ Products section. ------------------------------------------------------ */
+
+#productsSection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#productsSection .productPackage {
+    width: 33.3%;
+    background-color: beige;
+}
+
+/* ------------------------------------------------------ Slogan text. ------------------------------------------------------ */
+
+#sloganText {
+    text-align: center;
+}
+
+/* ------------------------------------------------------ Work. ------------------------------------------------------ */
+#workImagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#workSection img {
+    filter: grayscale(85%);
+    width: 20%;
+    height: auto;
+}
+
+/* ------------------------------------------------------ Contact submissions. ------------------------------------------------------ */
+
+/* ------------------------------------------------------ Team information. ------------------------------------------------------ */

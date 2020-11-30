@@ -23,11 +23,13 @@
     <!-- Top navigation bar. -->
     <nav>
         <div id="navBar">
-            <a href="">Logo</a>
-            <a href="">Producten</a>
-            <a href="">Over ons</a>
-            <a href="">Projecten</a>
-            <a href="">Team</a>
+            <a href="#navSpace" id="logoInNav">
+                <img src="./LogoEZWeb.png" style="width: 100%; height: auto; position: absolute; top: 0;">
+            </a>
+            <a href="#productsSection">Producten</a>
+            <a href="#sloganText">Over ons</a>
+            <a href="#workSection">Projecten</a>
+            <a href="#teamSection">Team</a>
         </div>
     </nav>
     <div id="navSpace"></div>
@@ -35,32 +37,71 @@
 
     <!-- Statement company. -->
     <div class="pageSection" id="statementText">
-        <h2>Onze drive en missie is om uw organisatie optimaal aanwezig te maken op het web. Wij bouwen unieke, dynamische, en gebruikrsvriendelijke websites om de klanten van onze klant aan te spreken.</h2>
+        <h2>Klanten aanspreken? Wij maken het EZ. </h2>
     </div>
+    <div class="pageDivider"></div>
 
 
     <!-- Products. -->
-    <div class="pageSection">
-        <h1></h1>
+    <div class="pageSection" id="productsSection">
+        <div class="productPackage">
+            <h1>€ 500</h1>
+            <p>De complete informatieve website</p>
+            <ul>
+                <li>1 Website mockup</li>
+                <li>3 Logo mockups</li>
+                <li>Responsive design</li>
+                <li>HTTPS-beveiliging</li>
+            </ul>
+        </div>
+        <div class="productPackage">
+            <h1>€ 750</h1>
+            <p>De complete interactieve website</p>
+            <ul>
+                <li>Complete website van EZ BASIC</li>
+                <li>6 Logo mockups</li>
+                <li>Eigen nieuwsbrief</li>
+                <li>SEO-optimalisering</li>
+                <li>Ingerichte CMS</li>
+            </ul>
+        </div>
+        <div class="productPackage">
+            <h1>€ 1000</h1>
+            <p>De complete interactieve website</p>
+            <ul>
+                <li>Complete website van EZ PREMIUM</li>
+                <li>Gepersonaliseerde CMS</li>
+                <li>Ingerichte database</li>
+                <li>Foutmelding pagina's</li>
+            </ul>
+        </div>
     </div>
+    <div class="pageDivider"></div>
 
 
     <!-- Slogan. -->
-    <div class="pageSection">
-        <h1></h1>
+    <div class="pageSection" id="sloganText">
+        <h2>Onze drive en missie is om uw organisatie optimaal aanwezig te maken op het web. Wij bouwen unieke,
+            dynamische, en gebruikrsvriendelijke websites om de klanten van onze klant aan te spreken.</h2>
     </div>
+    <div class="pageDivider"></div>
 
 
     <!-- Work. -->
-    <div class="pageSection">
-        <h1></h1>
+    <div class="pageSection" id="workSection">
+        <h2>Opdrachtgevers</h2>
+        <div id="workImagesContainer">
+            <img src="./images/work/GEFLogo.png">
+            <img src="./images/work/PraatjesEnPlaatjesLogo.png">
+        </div>
     </div>
+    <div class="pageDivider"></div>
 
 
     <!-- Contact submissions. -->
     <div class="pageSection">
         <div>
-            <h1>Kunnen wij jou van dienst zijn?</h1>
+            <h2>Kunnen wij jou van dienst zijn?</h2>
         </div>
         <div class="form">
             <div id="topContactInputs">
@@ -74,10 +115,11 @@
             </div>
         </div>
     </div>
+    <div class="pageDivider"></div>
 
 
     <!-- Team information. -->
-    <div class="pageSection">
+    <div class="pageSection" id="teamSection">
         <h2>Ons team</h2>
 
         <div>
