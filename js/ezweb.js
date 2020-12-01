@@ -1,1 +1,0 @@
-/* On mouse movement. */
