@@ -108,19 +108,28 @@
 
     <!-- Contact submissions. -->
     <div class="page">
-        <div class="pageSection">
+        <div class="pageSection" id="contactSection">
             <div>
                 <h2>Kunnen wij jou van dienst zijn?</h2>
             </div>
             <div class="form">
                 <div id="topContactInputs">
-                    <input id="nameInput" name="name" type="text" class="feedback-input" placeholder="Naam" />
-                    <input id="emailInput" name="email" type="text" class="feedback-input" placeholder="E-mail" />
-                    <input id="subjectInput" name="email" type="text" class="feedback-input" placeholder="Onderwerp" />
+                    <input id="nameInput" type="text" placeholder="Naam" />
+                    <input id="emailInput" type="text" placeholder="E-mail" />
+                    <input id="subjectInput" type="text" placeholder="Onderwerp" />
                 </div>
                 <div id="bottomContactInputs">
-                    <textarea id="commentInput" name="text" class="feedback-input" placeholder="Bericht"></textarea>
-                    <input id="sendMsgBtn" type="submit" value="Verstuur" />
+                    <textarea id="commentInput" placeholder="Bericht"></textarea>
+                    <button id="sendMsgBtn">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="envelopeIcon">
+                            <title></title>
+                            <g id="icomoon-ignore">
+                            </g>
+                            <path d="M464 64h-416c-26.4 0-48 21.6-48 48v320c0 26.4 21.6 48 48 48h416c26.4 0 48-21.6 48-48v-320c0-26.4-21.6-48-48-48zM199.37 275.186l-135.37 105.446v-250.821l135.37 145.375zM88.19 128h335.62l-167.81 126-167.81-126zM204.644 280.849l51.356 55.151 51.355-55.151 105.277 135.151h-313.264l105.276-135.151zM312.63 275.186l135.37-145.375v250.821l-135.37-105.446z">
+                            </path>
+                        </svg>
+                        Verstuur
+                    </button>
                 </div>
             </div>
         </div>
@@ -133,55 +142,15 @@
         <div class="pageSection" id="teamSection">
             <h2>Ons team</h2>
 
-            <div>
-                <h1>Erik</h1>
-
-                <p>De Mislukte Kunstenaar</p>
-                <img src="icons/067-phone.png" alt="tel" width="20"></img>
-                <p>+31616284091</p>
-
-                <!-- <img src="icons/Kwast-01.png" alt="Kwast" width="40"> -->
-                <hr>
-                <br>
-                <p>Klantrelaties</p>
-                <p>Designer</p>
-                <p>Web Developer</p>
-            </div>
-
-            <div>
-                <h1>Christopher</h1>
-
-                <p>De Development officer</p>
-                <img src="icons/067-phone.png" alt="tel" width="20"></img>
-                <p>+31633388901</p>
-
-                <!-- <img src="icons/Ding.png" alt="Tools" width="40"> -->
-                <hr>
-                <br>
-                <p>Technisch Consultant</p>
-                <p>Web Developer</p>
-                <p>Tester</p>
-            </div>
-
-            <div>
-                <h1>Dustin</h1>
-
-                <p>De Starcraft Pro </p>
-                <img src="icons/067-phone.png" alt="tel" width="20"></img>
-                <p>+31648178998</p>
-
-                <!-- <img src="icons/Wolk-01.png" alt="Wolk" width="40"> -->
-                <hr>
-                <br>
-                <p>Junior Web Developer</p>
-                <p>Marketingadviseur</p>
-                <p>Communicatieadviseur</p>
+            <div id="teamMemberContainer">
             </div>
         </div>
     </div>
 
 
     <!-- Javascript functions. -->
+    <script src="js/loadTeamMembers.js"></script>
+    <script src="js/messaging.js"></script>
     <script src="js/ezweb.js"></script>
 </body>
 

@@ -109,9 +109,10 @@ nav {
 
 .page {
     background-color: var(--secondaryBackgroundColour);
+    height: 100vh;
 }
 
-.page:nth-child(4n + 1) {
+.page:nth-child(4n+1) {
     background-color: var(--primaryBackgroundColour);
 }
 
@@ -120,14 +121,20 @@ nav {
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    height: 100vh;
+    height: 100%;
+
+    /* Padding pushes page down, this makes height exact height. */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* ------------------------------------------------------ Statement. ------------------------------------------------------ */
 
 h2 {
     font-family: SailecRegular;
-    color: white;
+    color: black;
+    margin-top: 0;
 }
 
 #statementText {
@@ -169,4 +176,83 @@ h2 {
 
 /* ------------------------------------------------------ Contact submissions. ------------------------------------------------------ */
 
+.form {
+    height: 80%;
+}
+
+#contactSection {
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+    height: 30%;
+}
+
+#topContactInputs, #bottomContactInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+}
+
+#topContactInputs input, textarea, #sendMsgBtn {
+    font-size: 18px;
+    width: 50%;
+    min-height: 40px;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+#sendMsgBtn {
+    background-color: black;
+    color: white;
+    transition-duration: 0.3s;
+    overflow: hidden;
+}
+
+#sendMsgBtn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+#sendMsgBtn:hover #envelopeIcon {
+    fill: black;
+}
+
+#envelopeIcon {
+    transform: translate(0px, 3px);
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
 /* ------------------------------------------------------ Team information. ------------------------------------------------------ */
+#teamSection h2 {
+    text-align: center;
+}
+
+#teamMemberContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.memberCard {
+    width: 33%;
+    /* flex-grow: 1; */
+    text-align: center;
+    background: linear-gradient(180deg, rgba(202,231,234,1) 0%, rgba(202,231,234,1) 53%, rgba(255,255,255,1) 100%);
+}
+
+.memberCard h3 {
+    font-family: SailecRegular;
+    font-size: 30px;
+}
+
+.memberCard hr {
+    width: 80%;
+}
