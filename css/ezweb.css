@@ -4,6 +4,9 @@
     --pageDividerColour: #561421;
     --primaryBackgroundColour: #CE2128;
     --secondaryBackgroundColour: white;
+    --basicPackageColour: white;
+    --premiumPackageColour: #F6F6F6;
+    --proPackageColour: #2ABDEE;
 }
 
 html {
@@ -94,6 +97,11 @@ nav {
     font-family: proximanovalight;
     color: white;
     text-decoration: none;
+    transition-duration: 0.7s;
+}
+
+#navBar a:hover {
+    text-decoration: underline;
 }
 
 #navSpace {
@@ -122,7 +130,6 @@ nav {
     padding-top: 20px;
     padding-bottom: 20px;
     height: 100%;
-
     /* Padding pushes page down, this makes height exact height. */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -152,7 +159,18 @@ h2 {
 
 #productsSection .productPackage {
     width: 33.3%;
-    background-color: beige;
+}
+
+#basicPackage {
+    background-color: var(--basicPackageColour);
+}
+
+#premiumPackage {
+    background-color: var(--premiumPackageColour);
+}
+
+#proPackage {
+    background-color: var(--proPackageColour);
 }
 
 /* ------------------------------------------------------ Slogan text. ------------------------------------------------------ */
@@ -231,6 +249,7 @@ textarea {
 }
 
 /* ------------------------------------------------------ Team information. ------------------------------------------------------ */
+
 #teamSection h2 {
     text-align: center;
 }
@@ -245,7 +264,7 @@ textarea {
     width: 33%;
     /* flex-grow: 1; */
     text-align: center;
-    background: linear-gradient(180deg, rgba(202,231,234,1) 0%, rgba(202,231,234,1) 53%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(202, 231, 234, 1) 0%, rgba(202, 231, 234, 1) 53%, rgba(255, 255, 255, 1) 100%);
 }
 
 .memberCard h3 {
