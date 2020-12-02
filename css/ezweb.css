@@ -120,6 +120,10 @@ nav {
     height: 100vh;
 }
 
+.smallPage {
+    height: initial;
+}
+
 .page:nth-child(4n+1) {
     background-color: var(--primaryBackgroundColour);
 }
@@ -149,6 +153,9 @@ h2 {
 }
 
 /* ------------------------------------------------------ Products section. ------------------------------------------------------ */
+#productsPage {
+    height: 50vh;
+}
 
 #productsSection {
     display: flex;
