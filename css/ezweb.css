@@ -121,14 +121,15 @@ nav {
 .page {
     background-color: var(--secondaryBackgroundColour);
     height: 100vh;
+    overflow: hidden;
+}
+
+.primaryPage {
+    background-color: var(--primaryBackgroundColour);
 }
 
 .smallPage {
     height: initial;
-}
-
-.page:nth-child(4n+1) {
-    background-color: var(--primaryBackgroundColour);
 }
 
 .pageSection {
@@ -153,6 +154,7 @@ h2 {
 
 #statementText {
     text-align: center;
+    position: relative;
 }
 
 /* ------------------------------------------------------ Products section. ------------------------------------------------------ */
@@ -185,6 +187,8 @@ h2 {
 
 #productsPage {
     height: 50vh;
+    position: relative;
+    overflow: hidden;
 }
 
 #productsSection {
@@ -197,7 +201,6 @@ h2 {
 #productsSection .productPackage {
     width: 33.3%;
     padding-top: 5%;
-    padding-bottom: 5%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -283,6 +286,7 @@ h2 {
 .contentPackage {
     z-index: 2;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .contentPackage ul {
@@ -302,13 +306,11 @@ h2 {
     background-color: var(--basicPackageColour);
 }
 
-/* ------------------------------------------------------ Slogan text. ------------------------------------------------------ */
+/* ------------------------------------------------------ Work. ------------------------------------------------------ */
 
-#sloganText {
+#workSection h2 {
     text-align: center;
 }
-
-/* ------------------------------------------------------ Work. ------------------------------------------------------ */
 
 #workImagesContainer {
     display: flex;
@@ -327,18 +329,38 @@ h2 {
 
 /* ------------------------------------------------------ Team information. ------------------------------------------------------ */
 
+#teamSection {
+    position: relative;
+}
+
+#teamSection::before {
+    content: " ";
+    height: 10%;
+    width: 200vw;
+    position: absolute;
+    background-color: var(--primaryBackgroundColour);
+    top: 0;
+    left: 0;
+    transform: rotate(2deg) translateY(-10%) translateX(-300px);
+    z-index: 1;
+}
+
 #teamSection h2 {
     text-align: center;
+    margin-top: 10%;
 }
 
 #teamMemberContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 80%;
 }
 
 .memberCard {
     width: 33%;
+    height: 70%;
     /* flex-grow: 1; */
     text-align: center;
     background: linear-gradient(180deg, rgba(202, 231, 234, 1) 0%, rgba(202, 231, 234, 1) 53%, rgba(255, 255, 255, 1) 100%);
