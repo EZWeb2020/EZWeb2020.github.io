@@ -75,13 +75,13 @@ body {
 
 nav {
     position: fixed;
-    background-color: #005a87;
+    background-color: black;
     display: flex;
     justify-content: center;
     margin: 0;
     width: 100%;
     height: var(--navHeight);
-    z-index: 3;
+    z-index: 4;
     top: 0;
 }
 
@@ -109,11 +109,11 @@ nav {
 }
 
 #logoInNav {
-    /* height: var(--navHeight); */
-    /* height: 100%; Turn either on to place back inside nav. Also change image dimensions in html. */
-    width: 10%;
+    /* height: var(--navHeight); Turn either on to place back inside nav. Also change image dimensions in html. */
+    height: 90%;
+    /* width: 10%;
     top: var(--navHeight);
-    position: relative;
+    position: relative; */
 }
 
 /* ------------------------------------------------------ Pages and sections. ------------------------------------------------------ */
@@ -156,6 +156,8 @@ h2 {
 }
 
 /* ------------------------------------------------------ Products section. ------------------------------------------------------ */
+
+/* Declaration colours. */
 
 .greenColours {
     --bg-color: #B8F9D3;
@@ -210,6 +212,8 @@ h2 {
     box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px var(--box-shadow-color);
 }
 
+/* *Card content. */
+
 .overlay {
     width: 118px;
     position: absolute;
@@ -248,10 +252,11 @@ h2 {
 }
 
 .circle svg {
-    z-index: 10000;
+    z-index: 3;
     transform: translateZ(0);
     position: absolute;
     width: 50%;
+    fill: white;
 }
 
 #productsSection .productPackage:hover .overlay {
@@ -265,6 +270,14 @@ h2 {
 
 #productsSection .productPackage:hover .circle:after {
     background: var(--bg-color-light);
+}
+
+#productsSection .productPackage:hover .circle svg {
+    fill: var(--bg-color);
+}
+
+#productsSection .productPackage:hover .contentPackage {
+    color: var(--text-color-hover);
 }
 
 .contentPackage {
