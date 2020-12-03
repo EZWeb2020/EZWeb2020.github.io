@@ -6,7 +6,7 @@
     --secondaryBackgroundColour: white;
     --basicPackageColour: white;
     --premiumPackageColour: #F6F6F6;
-    --proPackageColour: #2ABDEE;
+    --proPackageColour: rgb(219, 219, 219);
 }
 
 html {
@@ -81,7 +81,7 @@ nav {
     margin: 0;
     width: 100%;
     height: var(--navHeight);
-    z-index: 2;
+    z-index: 3;
     top: 0;
 }
 
@@ -157,6 +157,30 @@ h2 {
 
 /* ------------------------------------------------------ Products section. ------------------------------------------------------ */
 
+.greenColours {
+    --bg-color: #B8F9D3;
+    --bg-color-light: #e2fced;
+    --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(184, 249, 211, 0.48);
+    --cardColour: white;
+}
+
+.purpleColours {
+    --bg-color: #CEB2FC;
+    --bg-color-light: #F0E7FF;
+    --text-color-hover: #fff;
+    --box-shadow-color: rgba(206, 178, 252, 0.48);
+    --cardColour: white;
+}
+
+.blueColours {
+    --bg-color: #DCE9FF;
+    --bg-color-light: #f1f7ff;
+    --text-color-hover: #4C5656;
+    --box-shadow-color: rgba(220, 233, 255, 0.48);
+    --cardColour: white;
+}
+
 #productsPage {
     height: 50vh;
 }
@@ -170,13 +194,20 @@ h2 {
 
 #productsSection .productPackage {
     width: 33.3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     transition: all 0.3s ease-out;
+}
+
+#productsSection .productPackage:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px var(--box-shadow-color);
 }
 
 .overlay {
@@ -184,7 +215,7 @@ h2 {
     position: absolute;
     height: 118px;
     border-radius: 50%;
-    background: red;
+    background: var(--bg-color);
     z-index: 0;
     transition: transform 0.3s ease-out;
 }
@@ -193,7 +224,7 @@ h2 {
     width: 131px;
     height: 131px;
     border-radius: 50%;
-    background: #fff;
+    background: var(--cardColour);
     border: 2px solid var(--bg-color);
     display: flex;
     justify-content: center;
@@ -223,6 +254,29 @@ h2 {
     width: 50%;
 }
 
+#productsSection .productPackage:hover .overlay {
+    transform: scale(10) translateZ(0);
+}
+
+#productsSection .productPackage:hover .circle {
+    border-color: var(--bg-color-light);
+    background: var(--bg-color);
+}
+
+#productsSection .productPackage:hover .circle:after {
+    background: var(--bg-color-light);
+}
+
+.contentPackage {
+    z-index: 2;
+    text-align: center;
+}
+
+.contentPackage ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 #basicPackage {
     background-color: var(--basicPackageColour);
 }
@@ -232,7 +286,7 @@ h2 {
 }
 
 #proPackage {
-    background-color: var(--proPackageColour);
+    background-color: var(--basicPackageColour);
 }
 
 /* ------------------------------------------------------ Slogan text. ------------------------------------------------------ */
