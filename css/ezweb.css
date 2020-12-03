@@ -2,7 +2,7 @@
     --pageWidth: 80%;
     --navHeight: 50px;
     --pageDividerColour: #561421;
-    --primaryBackgroundColour: #CE2128;
+    --primaryBackgroundColour: #CAE7EA;
     --secondaryBackgroundColour: white;
     --basicPackageColour: white;
     --premiumPackageColour: #F6F6F6;
@@ -67,7 +67,7 @@ body {
 
 .pageDivider {
     background-color: var(--pageDividerColour);
-    height: 2vh;
+    height: 0;
     margin: 0;
 }
 
@@ -191,11 +191,15 @@ h2 {
 #workImagesContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
 }
 
 #workSection img {
-    filter: grayscale(85%);
-    width: 20%;
+    /* filter: grayscale(85%); */
+    filter: brightness(0) invert(1);
+    width: 40%;
     height: auto;
 }
 
