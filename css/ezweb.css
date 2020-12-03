@@ -110,7 +110,10 @@ nav {
 
 #logoInNav {
     /* height: var(--navHeight); */
-    height: 100%;
+    /* height: 100%; Turn either on to place back inside nav. Also change image dimensions in html. */
+    width: 10%;
+    top: var(--navHeight);
+    position: relative;
 }
 
 /* ------------------------------------------------------ Pages and sections. ------------------------------------------------------ */
@@ -153,6 +156,7 @@ h2 {
 }
 
 /* ------------------------------------------------------ Products section. ------------------------------------------------------ */
+
 #productsPage {
     height: 50vh;
 }
@@ -166,6 +170,57 @@ h2 {
 
 #productsSection .productPackage {
     width: 33.3%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+.overlay {
+    width: 118px;
+    position: absolute;
+    height: 118px;
+    border-radius: 50%;
+    background: red;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+}
+
+.circle {
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+}
+
+.circle:after {
+    content: "";
+    width: 118px;
+    height: 118px;
+    display: block;
+    position: absolute;
+    background: var(--bg-color);
+    border-radius: 50%;
+    top: 7px;
+    left: 7px;
+    transition: opacity 0.3s ease-out;
+}
+
+.circle svg {
+    z-index: 10000;
+    transform: translateZ(0);
+    position: absolute;
+    width: 50%;
 }
 
 #basicPackage {
@@ -201,6 +256,34 @@ h2 {
     filter: brightness(0) invert(1);
     width: 40%;
     height: auto;
+}
+
+/* ------------------------------------------------------ Team information. ------------------------------------------------------ */
+
+#teamSection h2 {
+    text-align: center;
+}
+
+#teamMemberContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.memberCard {
+    width: 33%;
+    /* flex-grow: 1; */
+    text-align: center;
+    background: linear-gradient(180deg, rgba(202, 231, 234, 1) 0%, rgba(202, 231, 234, 1) 53%, rgba(255, 255, 255, 1) 100%);
+}
+
+.memberCard h3 {
+    font-family: SailecRegular;
+    font-size: 30px;
+}
+
+.memberCard hr {
+    width: 80%;
 }
 
 /* ------------------------------------------------------ Contact submissions. ------------------------------------------------------ */
@@ -257,32 +340,4 @@ textarea {
     width: 20px;
     height: 20px;
     fill: white;
-}
-
-/* ------------------------------------------------------ Team information. ------------------------------------------------------ */
-
-#teamSection h2 {
-    text-align: center;
-}
-
-#teamMemberContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.memberCard {
-    width: 33%;
-    /* flex-grow: 1; */
-    text-align: center;
-    background: linear-gradient(180deg, rgba(202, 231, 234, 1) 0%, rgba(202, 231, 234, 1) 53%, rgba(255, 255, 255, 1) 100%);
-}
-
-.memberCard h3 {
-    font-family: SailecRegular;
-    font-size: 30px;
-}
-
-.memberCard hr {
-    width: 80%;
 }
