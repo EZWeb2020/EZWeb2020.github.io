@@ -1,8 +1,10 @@
 :root {
     --pageWidth: 80%;
     --navHeight: 50px;
+    --navColour: black;
     --pageDividerColour: #561421;
-    --primaryBackgroundColour: black;
+    /* --primaryBackgroundColour: #CAE7EA; */
+    --primaryBackgroundColour: #F6F6F6;
     --secondaryBackgroundColour: white;
     --basicPackageColour: white;
     --premiumPackageColour: #F6F6F6;
@@ -83,6 +85,7 @@ nav {
     height: var(--navHeight);
     z-index: 4;
     top: 0;
+    box-shadow: 0px 2px 5px 2px black;
 }
 
 #navBar {
@@ -192,18 +195,6 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-
-#productsPage::after {
-    content: " ";
-    height: 10%;
-    width: 200vw;
-    position: absolute;
-    background-color: black;
-    bottom: 0;
-    left: 0;
-    transform: rotate(2deg) translateY(95%) translateX(-300px);
-    z-index: 1;
 }
 
 #productsSection {
@@ -324,15 +315,40 @@ h2 {
     background-color: var(--basicPackageColour);
 }
 
+/* ------------------------------------------------------ Slogan. ------------------------------------------------------ */
+
+#sloganPage {
+    overflow: hidden;
+    height: 20vh;
+    position: relative;
+}
+
+#sloganPage .pageSection h2 {
+    text-align: center;
+}
+
+#sloganPage::after {
+    content: " ";
+    height: 40%;
+    width: 200vw;
+    position: absolute;
+    background-color: var(--premiumPackageColour);
+    bottom: 0;
+    left: 0;
+    transform: rotate(2deg) translateY(100%) translateX(-300px);
+    z-index: 1;
+}
+
 /* ------------------------------------------------------ Work. ------------------------------------------------------ */
+
 #workPage {
-    background-color: black;
+    background-color: var(--premiumPackageColour);
     height: 50vh;
 }
 
 #workSection h2 {
     text-align: center;
-    color: white;
+    font-family: SailecRegular;
 }
 
 #workImagesContainer {
@@ -345,8 +361,13 @@ h2 {
 
 #workSection img {
     /* filter: grayscale(85%); */
+<<<<<<< HEAD
     filter: brightness(0) invert(1);
     width: 20%;
+=======
+    /* filter: brightness(0) invert(1); */
+    width: 40%;
+>>>>>>> a07f106dbd3fabae2ef62c54e51a1885476bcb1c
     height: auto;
 }
 
@@ -361,7 +382,7 @@ h2 {
     height: 10%;
     width: 200vw;
     position: absolute;
-    background-color: black;
+    background-color: var(--premiumPackageColour);
     top: 0;
     left: 0;
     transform: rotate(2deg) translateY(-10%) translateX(-300px);
@@ -386,7 +407,8 @@ h2 {
     height: 70%;
     /* flex-grow: 1; */
     text-align: center;
-    background: linear-gradient(180deg, rgba(202, 231, 234, 1) 0%, rgba(202, 231, 234, 1) 53%, rgba(255, 255, 255, 1) 100%);
+    /* background: linear-gradient(180deg, rgba(202, 231, 234, 1) 0%, rgba(202, 231, 234, 1) 53%, rgba(255, 255, 255, 1) 100%); */
+    background: linear-gradient(180deg, #F6F6F6  0%, rgb(248, 248, 248) 53%, white 100%);
 }
 
 .memberCard h3 {
@@ -452,4 +474,20 @@ textarea {
     width: 20px;
     height: 20px;
     fill: white;
+}
+
+
+/* ------------------------------------------------------ Footer ------------------------------------------------------ */
+
+#footer {
+    background-color: black;
+}
+
+#footer .pageSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .pageSection * {
+    color: white;
 }
