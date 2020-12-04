@@ -2,7 +2,7 @@
     --pageWidth: 80%;
     --navHeight: 50px;
     --pageDividerColour: #561421;
-    --primaryBackgroundColour: #CAE7EA;
+    --primaryBackgroundColour: black;
     --secondaryBackgroundColour: white;
     --basicPackageColour: white;
     --premiumPackageColour: #F6F6F6;
@@ -323,7 +323,7 @@ h2 {
 #workSection img {
     /* filter: grayscale(85%); */
     filter: brightness(0) invert(1);
-    width: 40%;
+    width: 20%;
     height: auto;
 }
 
