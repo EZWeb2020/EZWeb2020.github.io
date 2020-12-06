@@ -65,6 +65,26 @@ body {
     src: url("fonts/SailecRegular.ttf")
 }
 
+@font-face {
+    font-family: OpenSansBold;
+    src: url("fonts/OpenSans-Bold.ttf")
+}
+
+@font-face {
+    font-family: OpenSansItalic;
+    src: url("fonts/OpenSans-Italic.ttf")
+}
+
+@font-face {
+    font-family: OpenSansLight;
+    src: url("fonts/OpenSans-Light.ttf")
+}
+
+@font-face {
+    font-family: OpenSansRegular;
+    src: url("fonts/OpenSans-Regular.ttf")
+}
+
 /* ------------------------------------------------------ Page dividers. ------------------------------------------------------ */
 
 .pageDivider {
@@ -77,7 +97,7 @@ body {
 
 nav {
     position: fixed;
-    background-color: black;
+    background-color: white;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -85,7 +105,7 @@ nav {
     height: var(--navHeight);
     z-index: 4;
     top: 0;
-    box-shadow: 0px 2px 5px 2px black;
+    box-shadow: 0px 2px 20px 2px black;
 }
 
 #navBar {
@@ -98,13 +118,18 @@ nav {
 
 #navBar a {
     font-family: proximanovalight;
-    color: white;
+    color: black;
     text-decoration: none;
-    transition-duration: 0.7s;
+    /* transition-duration: 0.1s; */
+}
+
+#navBar a:first-child:hover {
+    border-bottom: none;
 }
 
 #navBar a:hover {
-    text-decoration: underline;
+    font-family: proximanovaextrabold;
+    border-bottom: 3px solid #D1D2D4;
 }
 
 #navSpace {
@@ -117,10 +142,6 @@ nav {
     /* width: 10%;
     top: var(--navHeight);
     position: relative; */
-}
-
-#logoInNav:hover {
-    text-decoration: none;
 }
 
 /* ------------------------------------------------------ Pages and sections. ------------------------------------------------------ */
@@ -154,7 +175,7 @@ nav {
 /* ------------------------------------------------------ Statement. ------------------------------------------------------ */
 
 h2 {
-    font-family: SailecRegular;
+    font-family: OpenSansLight;
     color: black;
     margin-top: 0;
 }
@@ -352,25 +373,31 @@ h2 {
 
 #workSection h2 {
     text-align: center;
-    font-family: SailecRegular;
+    font-family: OpenSansBold;
 }
 
 #workImagesContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 80%;
 }
 
 #workSection img {
-    /* filter: grayscale(85%); */
-    /* filter: brightness(0) invert(1); */
-    width: 40%;
+    filter: grayscale(99%);
+    /* filter: brightness(0) invert(1);  */
+    width: 15%;
     height: auto;
 }
 
+#workSection img:hover {
+    filter: none;
+    transition: 0.3s;
+}
+
 /* ------------------------------------------------------ Team information. ------------------------------------------------------ */
+
 #teamPage {
     background: url(https://cached.imagescaler.hbpl.co.uk/resize/scaleHeight/815/cached.offlinehbpl.hbpl.co.uk/news/OMC/WFH-2019092007545320.jpg);
     background-repeat: no-repeat;
@@ -395,6 +422,7 @@ h2 {
 }
 
 #teamSection h2 {
+    font-family: OpenSansBold;
     text-align: center;
     margin-top: 10%;
 }
@@ -412,17 +440,19 @@ h2 {
     height: 70%;
     /* flex-grow: 1; */
     text-align: center;
-    background: linear-gradient(180deg, #F6F6F6  0%, rgb(248, 248, 248) 53%, white 100%);
+    background: linear-gradient(180deg, #F6F6F6 0%, rgb(248, 248, 248) 53%, white 100%);
 }
 
 .memberCard:nth-of-type(1) {
-    background: linear-gradient(180deg, #e2fced  0%, rgb(248, 248, 248) 53%, white 100%);
+    background: linear-gradient(180deg, #e2fced 0%, rgb(248, 248, 248) 53%, white 100%);
 }
+
 .memberCard:nth-of-type(2) {
-    background: linear-gradient(180deg, #F0E7FF  0%, rgb(248, 248, 248) 53%, white 100%);
+    background: linear-gradient(180deg, #F0E7FF 0%, rgb(248, 248, 248) 53%, white 100%);
 }
+
 .memberCard:nth-of-type(3) {
-    background: linear-gradient(180deg, #f1f7ff  0%, rgb(248, 248, 248) 53%, white 100%);
+    background: linear-gradient(180deg, #f1f7ff 0%, rgb(248, 248, 248) 53%, white 100%);
 }
 
 .memberCard h3 {
@@ -444,6 +474,10 @@ h2 {
     text-align: center;
 }
 
+#contactSection h2 {
+    font-family: OpenSansBold;
+}
+
 textarea {
     resize: none;
     height: 30%;
@@ -454,12 +488,12 @@ textarea {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 50%;
+    height: 20%;
 }
 
 #topContactInputs input, textarea, #sendMsgBtn {
     font-size: 18px;
-    width: 50%;
+    width: 30%;
     min-height: 40px;
     border-radius: 5px;
     border-width: 2px;
@@ -490,11 +524,12 @@ textarea {
     fill: white;
 }
 
-
 /* ------------------------------------------------------ Footer ------------------------------------------------------ */
 
 #footer {
-    background-color: black;
+    background-color: white;
+    box-shadow: 0px 2px 20px 2px black;
+    font-family: proximanovalight;
 }
 
 #footer .pageSection {
@@ -502,6 +537,22 @@ textarea {
     justify-content: space-between;
 }
 
+#footer .pageSection div {
+    width: 33%;
+}
+
 #footer .pageSection * {
-    color: white;
+    color: black;
+}
+
+.administratie {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.socialMediaIcons {
+    text-align: center;
 }
