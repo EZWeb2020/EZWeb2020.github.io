@@ -119,6 +119,10 @@ nav {
     position: relative; */
 }
 
+#logoInNav:hover {
+    text-decoration: none;
+}
+
 /* ------------------------------------------------------ Pages and sections. ------------------------------------------------------ */
 
 .page {
@@ -367,6 +371,12 @@ h2 {
 }
 
 /* ------------------------------------------------------ Team information. ------------------------------------------------------ */
+#teamPage {
+    background: url(https://cached.imagescaler.hbpl.co.uk/resize/scaleHeight/815/cached.offlinehbpl.hbpl.co.uk/news/OMC/WFH-2019092007545320.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 #teamSection {
     position: relative;
@@ -402,8 +412,17 @@ h2 {
     height: 70%;
     /* flex-grow: 1; */
     text-align: center;
-    /* background: linear-gradient(180deg, rgba(202, 231, 234, 1) 0%, rgba(202, 231, 234, 1) 53%, rgba(255, 255, 255, 1) 100%); */
     background: linear-gradient(180deg, #F6F6F6  0%, rgb(248, 248, 248) 53%, white 100%);
+}
+
+.memberCard:nth-of-type(1) {
+    background: linear-gradient(180deg, #e2fced  0%, rgb(248, 248, 248) 53%, white 100%);
+}
+.memberCard:nth-of-type(2) {
+    background: linear-gradient(180deg, #F0E7FF  0%, rgb(248, 248, 248) 53%, white 100%);
+}
+.memberCard:nth-of-type(3) {
+    background: linear-gradient(180deg, #f1f7ff  0%, rgb(248, 248, 248) 53%, white 100%);
 }
 
 .memberCard h3 {
