@@ -396,6 +396,7 @@ h2 {
 /* ------------------------------------------------------ Team information. ------------------------------------------------------ */
 
 #teamSection {
+  
     position: relative;
 }
 
@@ -522,4 +523,20 @@ textarea {
 
 #footer .pageSection * {
     color: black;
+}
+
+.administratie {
+    text-align: center;
+}
+
+.administratie {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.socialMediaIcons {
+    text-align: center;
 }
