@@ -1,0 +1,127 @@
+/*
+ *  Mobile css for mobile view.
+ *
+ *  The following will be done:
+ *      - Responsive design (no scrolling horizontally)
+ *      - Bigger buttons (fat fingers)
+ *      - Bigger text, no need to zoom in to read
+ *      - Simple navigation
+ *      - Simple forms
+ */
+
+@media only screen and (max-width: 600px) {
+    /* Mobile variables. */
+    :root {}
+    /* ------------------------------------------------------ Navigation CSS. ------------------------------------------------------ */
+    nav {
+        position: relative;
+        height: 20vh;
+    }
+    nav #navBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav #navBar::after {
+        content: "EZ Web";
+        position: absolute;
+        bottom: 0;
+        font-size: large;
+        font-family: proximanovabold;
+    }
+    nav a {
+        display: none;
+    }
+    nav #logoInNav {
+        display: block;
+    }
+    #navSpace {
+        display: none;
+    }
+    /* ------------------------------------------------------ Pages and sections. ------------------------------------------------------ */
+    /* ------------------------------------------------------ Statement. ------------------------------------------------------ */
+    #statementText h2 {
+        font-size: large;
+    }
+    .smallPage img {
+        width: 100%;
+        height: 10vh;
+    }
+    /* ------------------------------------------------------ Products section. ------------------------------------------------------ */
+    #productsPage {
+        height: initial;
+    }
+    .productPackage:nth-of-type(1) {
+        background-color: var(--premiumPackageColour) !important;
+    }
+    .productPackage:nth-of-type(2) {
+        background-color: white !important;
+    }
+    .productPackage:nth-of-type(3) {
+        background-color: var(--premiumPackageColour) !important;
+    }
+    #productsSection .productPackage {
+        width: 100%;
+    }
+    .contentPackage h3, .contentPackage p, .contentPackage ul {
+        display: none;
+    }
+    #productsSection .productPackage:active .contentPackage h3, #productsSection .productPackage:hover .contentPackage h3 {
+        display: block;
+    }
+    #productsSection .productPackage:active .contentPackage p, #productsSection .productPackage:hover .contentPackage p {
+        display: block;
+    }
+    #productsSection .productPackage:active .contentPackage ul, #productsSection .productPackage:hover .contentPackage ul {
+        display: block;
+    }
+    /* ------------------------------------------------------ Slogan. ------------------------------------------------------ */
+    #sloganPage {
+        height: initial;
+    }
+    #sloganPage .pageSection h2 {
+        font-size: large;
+    }
+    /* ------------------------------------------------------ Work. ------------------------------------------------------ */
+    #workImagesContainer img {
+        width: 40%;
+    }
+    /* ------------------------------------------------------ Team information. ------------------------------------------------------ */
+    #teamPage::before {
+        transform: rotate(2deg) translateY(-50%) translateX(-300px);
+    }
+    #teamPage {
+        min-height: initial;
+    }
+    #teamSection {
+        height: initial;
+    }
+    #teamMemberContainer {
+        height: initial;
+        width: 100%;
+        display: inline-flex;  
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .memberCard {
+        display: inline-block;
+        min-width: 100%;
+        height: 90vh;
+    }
+    /* ------------------------------------------------------ Contact submissions. ------------------------------------------------------ */
+    #contactPage {
+        height: initial;
+    }
+    .form input, .form textarea, .form #sendMsgBtn {
+        width: 100%;
+    }
+    /* ------------------------------------------------------ Footer ------------------------------------------------------ */
+    .administratie p {
+        margin: 0;
+    }
+    .copyright h3 {
+        display: none;
+    }
+}

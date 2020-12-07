@@ -185,7 +185,7 @@ h2 {
     position: relative;
 }
 
-#statementText h2{
+#statementText h2 {
     margin-bottom: 0;
 }
 
@@ -426,7 +426,7 @@ h2 {
     position: relative;
 }
 
-#teamSection::before {
+#teamPage::before {
     content: " ";
     height: 10%;
     width: 200vw;
@@ -514,38 +514,15 @@ h2 {
 }
 
 /* ------------------------------------------------------ Contact submissions. ------------------------------------------------------ */
+
 #contactPage {
     height: 50vh;
 }
 
 .form {
     display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#leftHalfForm, #rightHalfForm {
-    width: 50%;
-    height: 100%;
-    display: flex;
     flex-direction: column;
-}
-
-#leftHalfForm {
-    align-items: flex-end;
-}
-
-#leftHalfForm img {
-    width: 60%;
-    height: auto;
-    border-top: solid 1px;
-    border-left: solid 1px;
-    border-right: solid 1px;
-    box-sizing: border-box;
-}
-
-#rightHalfForm {
-    justify-content: flex-end;
+    align-items: center;
 }
 
 #contactSection {
@@ -559,20 +536,20 @@ h2 {
     font-family: OpenSansBold;
 }
 
-.form #leftHalfForm input, .form #rightHalfForm textarea, #sendMsgBtn {
+.form input, .form textarea, #sendMsgBtn {
     font-size: 18px;
-    width: 60%;
+    width: 33%;
     min-height: 40px;
     border-radius: 0px;
     border-width: 1px;
     border-bottom-width: 0px;
     padding: 13px;
     box-sizing: border-box;
+    background: transparent;
 }
 
-#rightHalfForm #commentInput {
-    height: inherit;
-    border-left-width: 0px;
+#commentInput {
+    min-height: 120px;
     resize: none;
 }
 
@@ -580,17 +557,12 @@ h2 {
     outline: none;
 }
 
-.form #leftHalfForm input:last-child {
-    border-bottom-width: 2px;
-}
-
 #sendMsgBtn {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     transition-duration: 0.3s;
     overflow: hidden;
-    border-bottom-width: 2px;
-    border-left-width: 0px;
+    border-bottom-width: 1px;
 }
 
 #sendMsgBtn:hover {
@@ -606,7 +578,7 @@ h2 {
     transform: translate(0px, 3px);
     width: 20px;
     height: 20px;
-    fill: white;
+    fill: black;
 }
 
 /* ------------------------------------------------------ Footer ------------------------------------------------------ */
