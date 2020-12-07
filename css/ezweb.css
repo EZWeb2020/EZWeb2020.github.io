@@ -185,6 +185,10 @@ h2 {
     position: relative;
 }
 
+#statementText h2{
+    margin-bottom: 0;
+}
+
 /* ------------------------------------------------------ Products section. ------------------------------------------------------ */
 
 /* Declaration colours. */
@@ -403,6 +407,19 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+
+#teamPage::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--premiumPackageColour);
+    height: 40%;
+    width: 200vw;
+    bottom: 0;
+    left: 0;
+    transform: rotate(2deg) translateY(100%) translateX(-300px);
+    z-index: 1;
 }
 
 #teamSection {
@@ -497,9 +514,42 @@ h2 {
 }
 
 /* ------------------------------------------------------ Contact submissions. ------------------------------------------------------ */
+#contactPage {
+    height: 50vh;
+}
 
 .form {
-    height: 80%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#leftHalfForm, #rightHalfForm {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#leftHalfForm {
+    align-items: flex-end;
+}
+
+#leftHalfForm img {
+    width: 60%;
+    height: auto;
+    border-top: solid 1px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    box-sizing: border-box;
+}
+
+#rightHalfForm {
+    justify-content: flex-end;
+}
+
+#rightHalfForm textarea {
+    height: inherit;
 }
 
 #contactSection {
@@ -518,22 +568,23 @@ textarea {
     height: 30%;
 }
 
-#topContactInputs, #bottomContactInputs {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 20%;
-}
-
-#topContactInputs input, textarea, #sendMsgBtn {
+.form #leftHalfForm input, .form #rightHalfForm textarea, #sendMsgBtn {
     font-size: 18px;
-    width: 30%;
+    width: 60%;
     min-height: 40px;
-    border-radius: 5px;
-    border-width: 2px;
+    border-radius: 0px;
+    border-width: 1px;
+    border-bottom-width: 0px;
     padding: 13px;
     box-sizing: border-box;
+}
+
+.form input:focus, .form textarea:focus {
+    outline: none;
+}
+
+.form #leftHalfForm input:last-child {
+    border-bottom-width: 2px;
 }
 
 #sendMsgBtn {
@@ -541,6 +592,7 @@ textarea {
     color: white;
     transition-duration: 0.3s;
     overflow: hidden;
+    border-bottom-width: 2px;
 }
 
 #sendMsgBtn:hover {
