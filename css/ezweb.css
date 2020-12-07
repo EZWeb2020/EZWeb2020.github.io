@@ -548,10 +548,6 @@ h2 {
     justify-content: flex-end;
 }
 
-#rightHalfForm textarea {
-    height: inherit;
-}
-
 #contactSection {
     text-align: center;
     display: flex;
@@ -563,11 +559,6 @@ h2 {
     font-family: OpenSansBold;
 }
 
-textarea {
-    resize: none;
-    height: 30%;
-}
-
 .form #leftHalfForm input, .form #rightHalfForm textarea, #sendMsgBtn {
     font-size: 18px;
     width: 60%;
@@ -577,6 +568,12 @@ textarea {
     border-bottom-width: 0px;
     padding: 13px;
     box-sizing: border-box;
+}
+
+#rightHalfForm #commentInput {
+    height: inherit;
+    border-left-width: 0px;
+    resize: none;
 }
 
 .form input:focus, .form textarea:focus {
@@ -593,6 +590,7 @@ textarea {
     transition-duration: 0.3s;
     overflow: hidden;
     border-bottom-width: 2px;
+    border-left-width: 0px;
 }
 
 #sendMsgBtn:hover {
