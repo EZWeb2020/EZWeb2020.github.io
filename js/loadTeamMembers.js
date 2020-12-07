@@ -44,14 +44,18 @@ function setupTeamMembers()
         let memberCardStr =
         `
             <div class="memberCard">
-                <h3>${TEAM_MEMBERS[i].name}</h3>
-                <p>${TEAM_MEMBERS[i].title}</p>
-                <img src="./images/team/PhoneIcon.png" alt="tel" width="20"></img>
-                <p>${TEAM_MEMBERS[i].phone}</p>
+                <div class="memberCardHover"></div>
+                <div class="memberCardHoverGrey"></div>
+                <div class="realCard">
+                    <h3>${TEAM_MEMBERS[i].name}</h3>
+                    <p>${TEAM_MEMBERS[i].title}</p>
+                    <img src="./images/team/PhoneIcon.png" alt="tel" width="20"></img>
+                    <p>${TEAM_MEMBERS[i].phone}</p>
 
-                <!-- <img src="icons/Kwast-01.png" alt="Kwast" width="40"> -->
-                <hr>
-                ${descriptionsList}
+                    <!-- <img src="icons/Kwast-01.png" alt="Kwast" width="40"> -->
+                    <hr>
+                    ${descriptionsList}
+                </div>
             </div>
         `;
 
