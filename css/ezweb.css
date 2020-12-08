@@ -377,7 +377,7 @@ h2 {
 
 #workSection h2 {
     text-align: center;
-    font-family: OpenSansBold;
+    font-family: OpenSansRegular;
 }
 
 #workImagesContainer {
@@ -439,7 +439,7 @@ h2 {
 }
 
 #teamSection h2 {
-    font-family: OpenSansBold;
+    font-family: OpenSansRegular;
     text-align: center;
     margin-top: 10%;
 }
@@ -533,7 +533,7 @@ h2 {
 }
 
 #contactSection h2 {
-    font-family: OpenSansBold;
+    font-family: OpenSansRegular;
 }
 
 .form input, .form textarea, #sendMsgBtn {
