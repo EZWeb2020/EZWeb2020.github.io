@@ -348,7 +348,7 @@ h2 {
 
 #sloganPage {
     overflow: hidden;
-    height: 20vh;
+    height: initial;
     position: relative;
 }
 
@@ -621,4 +621,9 @@ h2 {
     stroke-linejoin: round;
     stroke-miterlimit: 2;
     cursor: pointer;
+}
+
+/* ------------------------------------------------------ Mobile navigation ------------------------------------------------------ */
+#mobileNav {
+    display: none;
 }
