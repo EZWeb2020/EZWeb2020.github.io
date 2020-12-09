@@ -269,7 +269,7 @@ h2 {
 
 #productsSection .productPackage:hover {
     transform: translateY(-5px) scale(1.005) translateZ(0);
-    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px var(--box-shadow-color);
+    /* box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px var(--box-shadow-color); */
     z-index: 2;
 }
 
@@ -384,12 +384,12 @@ h2 {
 
 /* ------------------------------------------------------ Work. ------------------------------------------------------ */
 #workSection {
-    height: 70%;
+    height: initial;
 }
 
 #workPage {
     background-color: var(--premiumPackageColour);
-    height: 50vh;
+    height: initial;
 }
 
 #workSection h2 {
@@ -404,6 +404,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: var(--textTitleSpace);
 }
 
 #workSection img {
