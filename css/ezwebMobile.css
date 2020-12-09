@@ -11,7 +11,9 @@
 
 @media only screen and (max-width: 600px) {
     /* Mobile variables. */
-    :root {}
+    :root {
+        --titleFontSize: 20px;
+    }
     /* ------------------------------------------------------ Navigation CSS. ------------------------------------------------------ */
     nav {
         position: relative;
@@ -86,12 +88,18 @@
     #workImagesContainer img {
         width: 40%;
     }
+    #workSection h2 {
+        font-size: var(--titleFontSize);
+    }
     /* ------------------------------------------------------ Team information. ------------------------------------------------------ */
     #teamPage::before {
         transform: rotate(2deg) translateY(-50%) translateX(-300px);
     }
     #teamPage {
         min-height: initial;
+    }
+    #teamPage h2 {
+        font-size: var(--titleFontSize);
     }
     #teamSection {
         height: initial;
@@ -114,6 +122,10 @@
     #contactPage {
         height: initial;
     }
+    #contactSection h2 {
+        font-size: var(--titleFontSize);
+        margin-bottom: 20px;
+    }
     .form input, .form textarea, .form #sendMsgBtn {
         width: 100%;
     }
@@ -126,7 +138,7 @@
     }
     /* ------------------------------------------------------ Mobile navigation ------------------------------------------------------ */
     #mobileNav {
-        display: block;
+        display: none;
         position: fixed;
         bottom: 0;
         left: 0;

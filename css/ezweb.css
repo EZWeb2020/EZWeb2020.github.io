@@ -1,4 +1,5 @@
 :root {
+    --textTitleSpace: 7vh;
     --pageWidth: 80%;
     --navHeight: 50px;
     --navColour: black;
@@ -197,8 +198,8 @@ h2 {
 #statementText {
     text-align: center;
     position: relative;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: var(--textTitleSpace);
+    margin-bottom: var(--textTitleSpace);
 }
 
 #statementText h2 {
@@ -372,8 +373,8 @@ h2 {
 }
 
 #sloganPage .pageSection {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: var(--textTitleSpace);
+    margin-bottom: var(--textTitleSpace);
 }
 
 #sloganPage .pageSection h2 {
@@ -394,8 +395,8 @@ h2 {
 #workSection h2 {
     text-align: center;
     font-family: OpenSansRegular;
-    margin-top: 2.5vh;
-    margin-bottom: 5vh;
+    margin-top: var(--textTitleSpace);
+    margin-bottom: var(--textTitleSpace);
 }
 
 #workImagesContainer {
@@ -439,8 +440,8 @@ h2 {
 #teamPage h2 {
     font-family: OpenSansRegular;
     text-align: center;
-    margin-top: 2.5vh;
-    margin-bottom: 5vh;
+    margin-top: var(--textTitleSpace);
+    margin-bottom: var(--textTitleSpace);
 }
 
 #teamMemberContainer {
@@ -466,6 +467,11 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.realCard h3 {
+    font-size: 20px;
+    font-family: SailecRegular;
 }
 
 .memberCardHover {
@@ -500,11 +506,6 @@ h2 {
 
 .memberCard:nth-of-type(3) .memberCardHover {
     background: linear-gradient(180deg, #DCE9FF 0%, rgb(248, 248, 248) 53%, white 100%);
-}
-
-.memberCard h3 {
-    font-family: SailecRegular;
-    font-size: 30px;
 }
 
 .memberCard hr {
