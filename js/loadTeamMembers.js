@@ -4,13 +4,13 @@ const TEAM_MEMBERS =
 [
     {
         name:         "Erik",
-        title:        "De kunstenaar",
+        title:        "De Kunstenaar",
         phone:        "+31616284091",
         descriptions: ["Klantrelaties", "Designer", "Web Developer"]
     },
     {
         name:         "Christopher",
-        title:        "De Development officer",
+        title:        "De Development Officer",
         phone:        "+31633388901",
         descriptions: ["Technisch Consultant", "Web Developer", "Tester"]
     },
