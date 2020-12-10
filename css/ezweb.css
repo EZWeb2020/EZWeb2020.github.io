@@ -348,8 +348,13 @@ h2 {
 }
 
 .contentPackage ul {
+    font-size: 12px;
     list-style-type: none;
     padding: 0;
+}
+
+.contentPackage p {
+    font-family: OpenSansItalic;
 }
 
 #basicPackage {
