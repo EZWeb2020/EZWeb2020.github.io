@@ -10,3 +10,9 @@ setupTelegram();
 
  /* Team member setup function. */
 setupTeamMembers();
+
+/* Work links setup function. */
+setupWorkLinks();
+
+/* Footer links setup function. */
+setupFooterLinks();
