@@ -352,6 +352,10 @@ h2 {
     padding: 0;
 }
 
+.contentPackage h3 {
+    font-family: OpenSansBold;
+}
+
 .contentPackage p {
     font-family: OpenSansItalic;
 }
