@@ -65,9 +65,13 @@
     }
     #productsSection .productPackage {
         width: 100%;
+        justify-content: space-between;
     }
     .contentPackage h3, .contentPackage p, .contentPackage ul {
         display: none;
+    }
+    .contentPackage h1 {
+        margin: 0;
     }
     #productsSection .productPackage:active .contentPackage h3, #productsSection .productPackage:hover .contentPackage h3 {
         display: block;
