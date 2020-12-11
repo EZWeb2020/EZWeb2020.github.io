@@ -525,25 +525,29 @@ h2 {
 /* ------------------------------------------------------ Contact submissions. ------------------------------------------------------ */
 
 #contactPage {
-    height: 50vh;
+    height: initial;
 }
 
 .form {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: var(--textTitleSpace);
 }
 
 #contactSection {
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
+    padding: 0;
+    box-sizing: content-box;
+    height: initial;
 }
 
 #contactSection h2 {
     font-family: OpenSansRegular;
-    margin: 0;
+    margin-bottom: var(--textTitleSpace);
+    margin-top: var(--textTitleSpace);
 }
 
 #contactSection h2:last-child {
