@@ -152,6 +152,8 @@ nav {
     height: 0;
     border-left: 100vw solid transparent;
     border-top: 5vh solid white;
+    position: relative;
+    z-index: 2;
 }
 
 .triangleCoverGrey {
@@ -391,6 +393,7 @@ h2 {
 }
 
 /* ------------------------------------------------------ Work. ------------------------------------------------------ */
+
 #workSection {
     height: initial;
 }
@@ -526,6 +529,17 @@ h2 {
 
 #contactPage {
     height: initial;
+    position: relative;
+}
+
+#contactImage {
+    content: url("https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/ff068ff5fc855601751499d694c0111a/shutterstock_376532611.jpg?fit=fill&w=800&h=300");
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 33%;
+    height: 100%;
+    z-index: 1;
 }
 
 .form {
@@ -542,6 +556,8 @@ h2 {
     padding: 0;
     box-sizing: content-box;
     height: initial;
+    margin: 0 0 0 33%;
+    width: 66%;
 }
 
 #contactSection h2 {
@@ -556,14 +572,16 @@ h2 {
 
 .form input, .form textarea, #sendMsgBtn {
     font-size: 18px;
-    width: 33%;
+    width: 100%;
     min-height: 40px;
     border-radius: 0px;
-    border-width: 1px;
+    border-width: 0px;
     border-bottom-width: 0px;
     padding: 13px;
     box-sizing: border-box;
-    background: transparent;
+    margin-bottom: 10px;
+    background: white;
+    box-shadow: inset 0px 0px 11px 2px black;
 }
 
 #commentInput {
@@ -602,6 +620,8 @@ h2 {
 /* ------------------------------------------------------ Footer ------------------------------------------------------ */
 
 #footer {
+    position: relative;
+    z-index: 2;
     background-color: white;
     box-shadow: 0px 2px 20px 2px black;
     font-family: proximanovalight;

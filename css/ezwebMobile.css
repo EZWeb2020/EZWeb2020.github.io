@@ -154,6 +154,13 @@
     #contactPage {
         height: initial;
     }
+    #contactImage {
+        display: none;
+    }
+    #contactSection {
+        width: var(--pageWidth);
+        margin: auto;
+    }
     #contactSection h2 {
         font-size: var(--titleFontSize);
         margin-bottom: var(--textTitleSpace);
@@ -164,6 +171,19 @@
     }
     .form input, .form textarea, .form #sendMsgBtn {
         width: 100%;
+        font-size: 18px;
+        min-height: 40px;
+        border-radius: 0px;
+        border-width: 1px;
+        border-bottom-width: 0px;
+        padding: 13px;
+        margin: 0;
+        box-sizing: border-box;
+        background: transparent;
+        box-shadow: none;
+    }
+    .form #sendMsgBtn {
+        border-bottom-width: 2px;
     }
     /* ------------------------------------------------------ Footer ------------------------------------------------------ */
     .administratie p {
