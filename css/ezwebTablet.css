@@ -1,0 +1,225 @@
+/*
+ *  Tablet css.
+ *
+ *  The following will be done:
+ *      -
+ *      -
+ *      -
+ *      -
+ *      -
+ */
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    /* Tablet specific variables. */
+    :root {
+        --titleFontSize: 20px;
+    }
+    /* ------------------------------------------------------ Navigation CSS. ------------------------------------------------------ */
+    nav {
+        position: relative;
+        height: 20vh;
+    }
+    nav #navBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav #navBar::after {
+        /* content: "EZ Web"; */
+        position: absolute;
+        bottom: 0;
+        font-size: large;
+        font-family: proximanovabold;
+    }
+    nav a {
+        display: none;
+    }
+    nav #logoInNav {
+        display: block;
+    }
+    #navSpace {
+        display: none;
+    }
+    /* ------------------------------------------------------ Pages and sections. ------------------------------------------------------ */
+    /* ------------------------------------------------------ Statement. ------------------------------------------------------ */
+    #statementText h2 {
+        font-size: large;
+    }
+    .smallPage img {
+        width: 100%;
+        height: 10vh;
+        display: none;
+    }
+    /* ------------------------------------------------------ Products section. ------------------------------------------------------ */
+    #productsPage {
+        height: initial;
+    }
+    .productPackage:nth-of-type(1) {
+        background-color: var(--premiumPackageColour) !important;
+    }
+    .productPackage:nth-of-type(2) {
+        background-color: white !important;
+    }
+    .productPackage:nth-of-type(3) {
+        background-color: var(--premiumPackageColour) !important;
+    }
+    #productsSection .productPackage {
+        width: 100%;
+        min-height: initial;
+    }
+    .contentPackage h3, .contentPackage p, .contentPackage ul {
+        display: none;
+    }
+    .contentPackage h1 {
+        margin: 0;
+    }
+    #productsSection .productPackage:active .contentPackage h3, #productsSection .productPackage:hover .contentPackage h3 {
+        display: block;
+    }
+    #productsSection .productPackage:active .contentPackage p, #productsSection .productPackage:hover .contentPackage p {
+        display: block;
+    }
+    #productsSection .productPackage:active .contentPackage ul, #productsSection .productPackage:hover .contentPackage ul {
+        display: block;
+    }
+    /* ------------------------------------------------------ Slogan. ------------------------------------------------------ */
+    #sloganPage {
+        height: initial;
+    }
+    #sloganPage .pageSection h2 {
+        font-size: large;
+    }
+    /* ------------------------------------------------------ Work. ------------------------------------------------------ */
+    #workImagesContainer img {
+        width: 40%;
+    }
+    #workSection h2 {
+        font-size: var(--titleFontSize);
+    }
+    /* ------------------------------------------------------ Team information. ------------------------------------------------------ */
+    #teamPage::before {
+        transform: rotate(2deg) translateY(-50%) translateX(-300px);
+    }
+    #teamPage {
+        min-height: initial;
+    }
+    #teamPage h2 {
+        font-size: var(--titleFontSize);
+    }
+    #teamSection {
+        height: initial;
+    }
+    #teamMemberContainer {
+        height: initial;
+        width: 100%;
+        display: inline-flex;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    #teamMemberContainer::after {
+        display: block;
+        height: 100px;
+        width: 100px;
+        background-color: yellowgreen;
+    }
+    .memberCard {
+        display: inline-block;
+        min-width: 100%;
+        height: 90vh;
+    }
+    ::-webkit-scrollbar {
+        /* the scrollbar */
+    }
+    ::-webkit-scrollbar-button {
+        /* the buttons on the scrollbar (arrows pointing upwards and downwards). */
+    }
+    ::-webkit-scrollbar-thumb {
+        /* the draggable scrolling handle. */
+    }
+    ::-webkit-scrollbar-track {
+        /* the track (progress bar) of the scrollbar. */
+    }
+    ::-webkit-scrollbar-track {
+        /* -piece the track (progress bar) NOT covered by the handle. */
+    }
+    ::-webkit-scrollbar-corner {
+        /* the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet. */
+    }
+    ::-webkit-resizer {
+        /* the draggable resizing handle that appears at the bottom corner of some elements. */
+    }
+    /* ------------------------------------------------------ Contact submissions. ------------------------------------------------------ */
+    #contactPage {
+        height: initial;
+    }
+    #contactImage {
+        display: none;
+    }
+    #contactSection {
+        width: var(--pageWidth);
+        margin: auto;
+    }
+    #contactSection h2 {
+        font-size: var(--titleFontSize);
+        margin-bottom: var(--textTitleSpace);
+        margin-top: var(--textTitleSpace);
+    }
+    .form {
+        margin-bottom: var(--textTitleSpace);
+    }
+    .form input, .form textarea, .form #sendMsgBtn {
+        width: 100%;
+        font-size: 18px;
+        min-height: 40px;
+        border-radius: 0px;
+        border-width: 1px;
+        border-bottom-width: 0px;
+        padding: 13px;
+        margin: 0;
+        box-sizing: border-box;
+        background: transparent;
+        box-shadow: none;
+    }
+    .form #sendMsgBtn {
+        border-bottom-width: 2px;
+    }
+    /* ------------------------------------------------------ Footer ------------------------------------------------------ */
+    .administratie p {
+        margin: 0;
+    }
+    .copyright h3 {
+        display: none;
+    }
+    /* ------------------------------------------------------ Mobile navigation ------------------------------------------------------ */
+    #mobileNav {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        height: 5vh;
+        width: 5vh;
+        border-top-right-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .bar1, .bar2, .bar3 {
+        width: 80%;
+        height: 10%;
+        background-color: white;
+        margin: 3px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}

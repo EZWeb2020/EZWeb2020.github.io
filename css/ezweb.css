@@ -572,7 +572,7 @@ h2 {
 
 .form input, .form textarea, #sendMsgBtn {
     font-size: 18px;
-    width: 100%;
+    width: 80%;
     min-height: 40px;
     border-radius: 0px;
     border-width: 0px;
@@ -581,7 +581,6 @@ h2 {
     box-sizing: border-box;
     margin-bottom: 10px;
     background: white;
-    box-shadow: inset 0px 0px 11px 2px black;
 }
 
 #commentInput {
@@ -598,7 +597,7 @@ h2 {
     color: black;
     transition-duration: 0.3s;
     overflow: hidden;
-    border-bottom-width: 1px;
+    border-bottom-width: 0px;
 }
 
 #sendMsgBtn:hover {
