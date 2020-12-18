@@ -530,7 +530,7 @@ h2 {
 #contactPage {
     height: initial;
     position: relative;
-    background: url("../images/stock/pexels-tembela-bohle-1330749.jpg");
+    /* background: url("../images/stock/pexels-dylan-4417069_CROP.png"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -564,7 +564,7 @@ h2 {
 }
 
 #contactSection h2 {
-    color: white;
+    color: black;
     font-family: OpenSansRegular;
     margin-bottom: var(--textTitleSpace);
     margin-top: var(--textTitleSpace);
@@ -574,17 +574,31 @@ h2 {
     color: var(--premiumPackageColour);
 }
 
-.form input, .form textarea, #sendMsgBtn {
-    font-size: 18px;
+.labelAndInputHolder {
+    position: relative;
     width: 80%;
+}
+
+.labelAndInputHolder label {
+    position: absolute;
+    font-size: 16px;
+    top: 0;
+    left: 10px;
+    transition-duration: 0.3s;
+}
+
+.form input, .form textarea {
+    font-size: 18px;
+    width: 100%;
     min-height: 40px;
     border-radius: 0px;
     border-width: 0px;
-    border-bottom-width: 0px;
-    padding: 13px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    background: var(--premiumPackageColour);
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+    border-bottom-width: 2px;
+    padding-top: 16px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    transition-duration: 0.3s;
 }
 
 #commentInput {
@@ -592,16 +606,27 @@ h2 {
     resize: none;
 }
 
-.form input:focus, .form textarea:focus {
+.form input:hover, .form textarea:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.labelAndInputHolder input:focus, .labelAndInputHolder textarea:focus {
     outline: none;
+    border-bottom-color: blue;
+}
+.labelAndInputHolder input:focus + label, .labelAndInputHolder textarea:focus + label {
+    font-size: 14px;
 }
 
 #sendMsgBtn {
+    width: 80%;
+    min-height: 50px;
+    font-size: 18px;
     background-color: white;
     color: black;
     transition-duration: 0.3s;
     overflow: hidden;
-    border-bottom-width: 0px;
+    border-width: 0;
 }
 
 #envelopeIcon {
@@ -610,11 +635,10 @@ h2 {
 
 #sendMsgBtn:hover {
     background-color: transparent;
-    color: white;
 }
 
 #sendMsgBtn:hover #envelopeIcon {
-    fill: white;
+    fill: black;
 }
 
 #envelopeIcon {

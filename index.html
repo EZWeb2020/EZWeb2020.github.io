@@ -194,10 +194,23 @@
         <div class="pageSection" id="contactSection">
             <h2>Kunnen wij jou van dienst zijn?</h2>
             <div class="form">
-                <input id="nameInput" type="text" placeholder="Naam" />
-                <input id="emailInput" type="text" placeholder="E-mail" />
-                <input id="subjectInput" type="text" placeholder="Onderwerp" />
-                <textarea id="commentInput" placeholder="Bericht"></textarea>
+                <div class="labelAndInputHolder">
+                    <input id="nameInput" type="text"/>
+                    <label>Naam</label>
+                </div>
+                <div class="labelAndInputHolder">
+                    <input id="emailInput" type="text" />
+                    <label>E-mail</label>
+                </div>
+                <div class="labelAndInputHolder">
+                    <input id="subjectInput" type="text"/>
+                    <label>Onderwerp</label>
+                </div>
+                <div class="labelAndInputHolder">
+                    <textarea id="commentInput"></textarea>
+                    <label>Bericht</label>
+                </div>
+
                 <button id="sendMsgBtn">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="envelopeIcon">
                         <title></title>
