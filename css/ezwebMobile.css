@@ -169,7 +169,10 @@
     .form {
         margin-bottom: var(--textTitleSpace);
     }
-    .form input, .form textarea, .form #sendMsgBtn {
+    .labelAndInputHolder {
+        width: 100%;
+    }
+    .labelAndInputHolder input, .labelAndInputHolder textarea, .form #sendMsgBtn {
         width: 100%;
         font-size: 18px;
         min-height: 40px;
@@ -181,6 +184,9 @@
         box-sizing: border-box;
         background: transparent;
         box-shadow: none;
+    }
+    .labelAndInputHolder {
+        max-height: 200px;
     }
     .form #sendMsgBtn {
         border-bottom-width: 2px;
