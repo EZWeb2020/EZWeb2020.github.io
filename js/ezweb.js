@@ -5,10 +5,13 @@
  *  be used.
  */
 
- /* Telegram messaging function. */
+/* Contact animation, etc function. */
+setupContactSection();
+
+/* Telegram messaging function. */
 setupTelegram();
 
- /* Team member setup function. */
+/* Team member setup function. */
 setupTeamMembers();
 
 /* Work links setup function. */

@@ -61,13 +61,13 @@ function animateSendBtn()
     let svgEnvelope     = $("#envelopeIcon");
     let verstuurBtnHTML = $("#verstuurBtn");
 
-    $({xPosition: 0}).animate({xPosition: 600},
+    $({xPosition: 0}).animate({xPosition: 2000},
     {
-        duration: 400,
+        duration: 1200,
         easing: 'linear',
         step: function ()
         {
-            if (this.xPosition >= 500)
+            if (this.xPosition >= 1800)
             {
                 svgEnvelope.css({transform: "translate(0px, 3px)"});
                 verstuurBtnHTML.css("visibility", "visible");
