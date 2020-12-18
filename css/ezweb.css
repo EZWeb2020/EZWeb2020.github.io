@@ -530,15 +530,19 @@ h2 {
 #contactPage {
     height: initial;
     position: relative;
+    background: url("../images/stock/pexels-tembela-bohle-1330749.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #contactImage {
-    content: url("../images/stock/pexels-tembela-bohle-1330749.jpg");
+    /* content: url("../images/stock/pexels-tembela-bohle-1330749.jpg"); */
     position: absolute;
     left: 0;
     top: 0;
-    width: 33%;
-    height: 100%;
+    /* width: 33%;
+    height: 100%; */
     z-index: 1;
 }
 
@@ -556,11 +560,11 @@ h2 {
     padding: 0;
     box-sizing: content-box;
     height: initial;
-    margin: 0 0 0 33%;
     width: 66%;
 }
 
 #contactSection h2 {
+    color: white;
     font-family: OpenSansRegular;
     margin-bottom: var(--textTitleSpace);
     margin-top: var(--textTitleSpace);
@@ -580,7 +584,7 @@ h2 {
     padding: 13px;
     box-sizing: border-box;
     margin-bottom: 10px;
-    background: white;
+    background: var(--premiumPackageColour);
 }
 
 #commentInput {
@@ -600,13 +604,17 @@ h2 {
     border-bottom-width: 0px;
 }
 
+#envelopeIcon {
+    transition-duration: 0.3s;
+}
+
 #sendMsgBtn:hover {
     background-color: transparent;
-    color: black;
+    color: white;
 }
 
 #sendMsgBtn:hover #envelopeIcon {
-    fill: black;
+    fill: white;
 }
 
 #envelopeIcon {
