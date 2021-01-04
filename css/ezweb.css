@@ -595,7 +595,7 @@ h2 {
     border-radius: 0px;
     border-width: 0px;
     border-bottom-color: rgba(0, 0, 0, 0.5);
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
     padding-top: 0px;
     /* 16px */
     padding-left: 10px;
@@ -626,7 +626,7 @@ h2 {
     width: 80%;
     min-height: 50px;
     font-size: 18px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0);
     color: black;
     transition-duration: 0.3s;
     overflow: hidden;
