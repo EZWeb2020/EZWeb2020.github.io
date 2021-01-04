@@ -585,6 +585,7 @@ h2 {
     top: 0;
     left: 10px;
     transition-duration: 0.3s;
+    display: none;
 }
 
 .form input, .form textarea {
@@ -595,10 +596,11 @@ h2 {
     border-width: 0px;
     border-bottom-color: rgba(0, 0, 0, 0.5);
     border-bottom-width: 2px;
-    padding-top: 16px;
+    padding-top: 0px;
+    /* 16px */
     padding-left: 10px;
     margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0);
     transition-duration: 0.3s;
 }
 
@@ -615,7 +617,8 @@ h2 {
     outline: none;
     border-bottom-color: blue;
 }
-.labelAndInputHolder input:focus + label, .labelAndInputHolder textarea:focus + label {
+
+.labelAndInputHolder input:focus+label, .labelAndInputHolder textarea:focus+label {
     font-size: 14px;
 }
 
